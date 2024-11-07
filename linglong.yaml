@@ -6,7 +6,7 @@ package:
   version: 1.0.0.0
   kind: app
   description: |
-    com.qq.video.deepin_11.86.3296.0deepin3_amd64
+    signed_com.qq.video.deepin_11.86.3296.0deepin5_amd64.deb
 
 base: org.deepin.base.wine/23.2.0.5
 runtime: org.deepin.runtime.wine/23.2.1.4
@@ -16,13 +16,13 @@ command:
 
 sources:
   - kind: file
-    url: https://aptly.uniontech.com/pkg/nonfree-eagle/release-candidate/d2luZTgtcnVudGltZTIyMDI0LTA5LTAzIDEzOjE1OjAx/pool/non-free/c/com.qq.video.deepin/com.qq.video.deepin_11.86.3296.0deepin3_amd64.deb
-    digest: 3c97d62c70077b66db9fb16569ae2eb7f83fd35900d4e94e8f7f25988dd1ce2d
+    url: https://winedata-dev.deepin.com/apps/com.qq.video.deepin/ee7ecfd/signed_com.qq.video.deepin_11.86.3296.0deepin5_amd64.deb
+    digest: 2266422793139dbb1a4a1a8a7c7f67e47b3963be99267a4b1ccc85ef8cc30f39
 
 build: |
   set -x
   SOURCES="linglong/sources"
-  dpkg-deb -x $SOURCES/com.qq.video.deepin_11.86.3296.0deepin3_amd64.deb $SOURCES/com.qq.video.deepin
+  dpkg-deb -x $SOURCES/signed_com.qq.video.deepin_11.86.3296.0deepin5_amd64.deb $SOURCES/com.qq.video.deepin
   rm -rf $SOURCES/com.qq.video.deepin/opt/apps/com.qq.video.deepin/files/dlls/wineserver
   # run.sh替换
   FILE_PATH="$SOURCES/com.qq.video.deepin/opt/apps/com.qq.video.deepin/files/run.sh" 
