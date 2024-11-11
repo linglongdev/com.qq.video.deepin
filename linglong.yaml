@@ -3,10 +3,10 @@ version: "1"
 package:
   id: com.qq.video.deepin
   name: com.qq.video.deepin
-  version: 1.0.0.0
+  version: 1.0.0.1
   kind: app
   description: |
-    signed_com.qq.video.deepin_11.86.3296.0deepin5_amd64.deb
+    com.qq.video.deepin_11.86.3296.0deepin5_amd64
 
 base: org.deepin.base.wine/23.2.0.5
 runtime: org.deepin.runtime.wine/23.2.1.4
