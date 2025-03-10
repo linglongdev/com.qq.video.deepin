@@ -3,10 +3,10 @@ version: "1"
 package:
   id: com.qq.video.deepin
   name: com.qq.video.deepin
-  version: 1.0.0.3
+  version: 1.0.0.4
   kind: app
   description: |
-    com.qq.video.deepin_11.86.3296.0deepin7_amd64.deb
+    com.qq.video.deepin_11.86.3296.0deepin8_amd64.deb
 
 base: org.deepin.base.wine/23.2.0
 runtime: org.deepin.runtime.wine/23.2.1
@@ -17,14 +17,14 @@ command:
 
 sources:
   - kind: file
-    url: https://winedata-dev.deepin.com/apps/com.qq.video.deepin/2ae0f9f/com.qq.video.deepin_11.86.3296.0deepin7_amd64.deb
-    digest: 3962cac4d8da047b716760223d6552b06d2150aad067a5645a1b57e9bc65a893
+    url: https://winedata-dev.deepin.com/apps/com.qq.video.deepin/e4a883c/com.qq.video.deepin_11.86.3296.0deepin8_amd64.deb
+    digest: fc34faadf1245231cda35a33fa75a05fc66bca87769ea48208ad582079615b80
 
 
 build: |
   set -x
   SOURCES="linglong/sources"
-  dpkg-deb -x $SOURCES/com.qq.video.deepin_11.86.3296.0deepin7_amd64.deb $SOURCES/com.qq.video.deepin
+  dpkg-deb -x $SOURCES/com.qq.video.deepin_11.86.3296.0deepin8_amd64.deb $SOURCES/com.qq.video.deepin
 
   # run.sh替换
   FILE_PATH="$SOURCES/com.qq.video.deepin/opt/apps/com.qq.video.deepin/files/run.sh" 
